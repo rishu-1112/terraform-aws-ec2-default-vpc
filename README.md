@@ -64,7 +64,12 @@ The configuration references a key pair named "my-key-pair". You can:
 
 ## Screenshots
 
-(Add screenshots here showing the Terraform plan, apply output, and EC2 instance in AWS console)
+### EC2-RUNNING 🔷
+![ec2-instance-runnig](./scrrenshots/ec2-running.png)
+
+### TERMINAL-OUTPUT 🔷
+
+![terminal-screenshots](./scrrenshots/terminal.png)
 
 ## Security Considerations
 
