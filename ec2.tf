@@ -13,18 +13,19 @@ data "aws_security_group" "default" {
 
 # EC2 instance
 resource "aws_instance" "my_ec2_instance" {
-  ami           = "ami-0e12ffc2dd465f6e4"
-  instance_type = "t3.micro"
-  key_name = "my-key-pair"
+  ami           = var.ec2-ami
+  instance_type = var.ec2-type
+  key_name = var.ec2-key-name
 
   vpc_security_group_ids = [data.aws_security_group.default.id]
+  user_data = file("nginx-install.sh")
 
   root_block_device {
-    volume_size = 10
-    volume_type = "gp3"
+    volume_size = var.ec2-root-block-device["volume_size"]
+    volume_type = var.ec2-root-block-device["volume_type"]
   }
 
   tags = {
-    Name = "created-by-terraform"
+    Name = var.ec2-tags["Name"]
   }
 }
