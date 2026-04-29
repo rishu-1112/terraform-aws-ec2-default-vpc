@@ -68,7 +68,6 @@ The configuration references a key pair named "my-key-pair". You can:
 ![ec2-instance-runnig](./scrrenshots/ec2-running.png)
 
 ### TERMINAL-OUTPUT 🔷
-
 ![terminal-screenshots](./scrrenshots/terminal.png)
 
 ## Security Considerations
