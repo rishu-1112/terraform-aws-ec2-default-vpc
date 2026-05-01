@@ -65,10 +65,10 @@ The configuration references a key pair named "my-key-pair". You can:
 ## Screenshots
 
 ### EC2-RUNNING 🔷
-![ec2-instance-runnig](./scrrenshots/ec2-running.png)
+![ec2-instance-runnig](./screenshots/ec2-running.png)
 
 ### TERMINAL-OUTPUT 🔷
-![terminal-screenshots](./scrrenshots/terminal.png)
+![terminal-screenshots](./screenshots/terminal.png)
 
 ## Security Considerations
 
